@@ -1,0 +1,15 @@
+person
+bicycle
+bus
+car
+carrier
+motorcycle
+movable signage
+truck
+bollard
+chair
+potted plant
+table
+tree trunk
+fire hydrant
+pole

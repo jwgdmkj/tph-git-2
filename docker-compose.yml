@@ -1,0 +1,31 @@
+version: '2.3'
+
+services:
+  main:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    runtime: nvidia
+    restart: always
+    ipc: "host"
+    env_file:
+      - "docker-compose-env/main.env"
+    volumes:      
+      - "/media/mmlab/hdd/:/hdd"
+    expose:
+      - "8888"
+      - "8000"
+      - "22"
+    ports:
+      - "28000:8000"
+      - "28888:8888"
+      - "20022:22"
+    stdin_open: true
+    tty: true
+
+volumes:
+  mllime:
+    driver_opts:
+      type: "nfs"
+      o: "addr=mlsun.sogang.ac.kr,nolock,soft,rw"
+      device: ":/volume1/nfs_shared"
