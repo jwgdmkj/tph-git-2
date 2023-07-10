@@ -1,0 +1,9 @@
+train: ./data/train/
+val: ./data/val/
+test: ./data/test/
+
+# number of classes
+nc: 10
+
+# class names
+names: [ 'pedestrian', 'people', 'bicycle', 'car', 'van', 'truck', 'tricycle', 'awning-tricycle', 'bus', 'motor' ]

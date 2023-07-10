@@ -1,0 +1,13 @@
+# Obstacle 15 by mmlab of Sogang University
+
+train: /dataset/yolov5-1280_yj/images/train  # 190,806 images
+val: /dataset/yolov5-1280_yj/images/val      #  44,003 images
+#test: /dataset/yolov5-640/images/test    #  43,981 images
+
+# number of classes
+nc: 15
+
+# class names
+names: ['person', 'bicycle', 'bus', 'car', 'carrier',
+        'motorcycle', 'movable_signage', 'truck', 'bollard', 'chair',
+        'potted_plant', 'table', 'tree_trunk', 'fire_hydrant', 'pole']  # class names

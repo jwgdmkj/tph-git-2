@@ -1,0 +1,9 @@
+train: ./data/train/
+val: ./data/val/
+test: ./data/test/
+
+# number of classes
+nc: 4
+
+# class names
+names: [ 'link', 'button', 'img', 'listitem' ]
